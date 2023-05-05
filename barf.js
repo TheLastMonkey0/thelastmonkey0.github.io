@@ -112,7 +112,7 @@ $html.addEventListener('click', () => {
 
 // Cuando se escribe, se actualiza el iframe pasandole la web creada
 document.addEventListener('keyup', (e) => {
-  if (e.key == 'space') {
+  if (e.key == 'Escape') {
     createZip();
     return
   }
@@ -121,7 +121,7 @@ document.addEventListener('keyup', (e) => {
 
 //Borramos todo el código pulsando ESC
 document.addEventListener('keyup', (e) => {
-  if (e.key == 'Escape') {
+  if (e.key == 'a') {
     resetWeb();
     $css.value = localStorage.getItem('css');
     $html.value = localStorage.getItem('html');
