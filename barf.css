@@ -1,0 +1,74 @@
+/* Resize lines */
+body {
+  background-color: rgb(30,30,30);
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+*{
+  box-sizing: border-box;
+}
+  
+.grid {
+  display: grid;
+  grid-template-columns: 49.8% 0.4% 49.8%;
+  grid-template-rows: 49.7% 0.6% 49.7%;
+  height: 98%;
+
+}
+  
+.vertical-gutter {
+  grid-area: 1 / 2 / 4 / 2;
+  border: solid 1px rgb(80, 79, 79);
+  cursor: col-resize;
+}
+  
+.horizontal-gutter {
+  grid-area: 2 / 1 / 2 / 4;
+  border: solid 1px rgb(80, 79, 79);
+  cursor: row-resize;
+}
+
+/* Editor */
+.editor {
+  position: relative;
+  padding: 15px 0px;
+}
+
+.editor::after {
+  content: '';
+  position: absolute;
+  background-repeat: no-repeat;
+  right: 16px;
+  bottom: 20px;
+  z-index: 1;
+  width: 35px;
+  height: 35px;
+}
+
+#js::after {
+  background-image: url('/img/js.svg');
+}
+
+#css::after {
+  background-image: url('/img/css.svg');
+}
+
+#html::after {
+  background-image: url('/img/html.svg');
+  width: 220px;
+  height: 90px;
+  
+}
+
+/* Iframe */
+iframe {
+  background: #fff;
+  border: 0;
+  height: 100%;
+  width: 100%;
+}
+
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="barf.css">
+    <script src="https://unpkg.com/split-grid/dist/split-grid.js"></script>
+    <script type="module" src="/wc-monaco-editor-main/index.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/g/filesaver.js"></script>
+    <script src="/Stuk-jszip/dist/jszip.js"></script>
+    <script defer type="module" src="barf.js"></script>
+    <link rel="icon" href="/img/iconCode.svg">
+    <title>BarfYourCode</title>
+</head>
+<body>
+    <div class="grid">
+        <div>
+          <wc-monaco-editor class="editor" tab-size="1" id="html" language="html"></wc-monaco-editor>
+        </div>
+        <div>
+          <wc-monaco-editor class="editor" tab-size="1" id="css" language="css"></wc-monaco-editor>
+        </div>
+        <div>
+          <wc-monaco-editor class="editor" tab-size="1" id="js" language="javascript"></wc-monaco-editor>
+        </div>
+        <div>
+          <iframe srcdoc="" id="iframe"></iframe>
+        </div>
+        <div class="horizontal-gutter">
+        </div>
+        <div class="vertical-gutter">
+        </div>
+      </div>
+</body>
+</html>
