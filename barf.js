@@ -112,7 +112,7 @@ $html.addEventListener('click', () => {
 
 // Cuando se escribe, se actualiza el iframe pasandole la web creada
 document.addEventListener('keyup', (e) => {
-  if (e.key == 'F4') {
+  if (e.key == 'space') {
     createZip();
     return
   }
