@@ -45,7 +45,7 @@ function createWeb () {
   </head>
   <body>
   ${html}
-  <script>
+  <script type="module">
   ${js}
   </script>
   </body>
@@ -82,7 +82,7 @@ function createZip() {
 }
 
 /* Código principal */
-if (!localStorage.getItem('html')) resetWeb();
+// if (!localStorage.getItem('html')) resetWeb();
 $css.value = localStorage.getItem('css');
 $html.value = localStorage.getItem('html');
 $js.value = localStorage.getItem('js');
