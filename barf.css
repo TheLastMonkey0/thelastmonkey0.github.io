@@ -1,4 +1,7 @@
-/* Resize lines */
+*{
+  box-sizing: border-box;
+}
+
 body {
   background-color: rgb(30,30,30);
   padding: 0;
@@ -6,11 +9,8 @@ body {
   width: 100vw;
   height: 100vh;
 }
-
-*{
-  box-sizing: border-box;
-}
-  
+ 
+/* Grid */
 .grid {
   display: grid;
   grid-template-columns: 49.8% 0.4% 49.8%;
@@ -18,7 +18,8 @@ body {
   height: 98%;
 
 }
-  
+
+/* Resize Split-grid */
 .vertical-gutter {
   grid-area: 1 / 2 / 4 / 2;
   border: solid 1px rgb(80, 79, 79);
@@ -48,18 +49,23 @@ body {
   height: 35px;
 }
 
+/* Iconos */
 #js::after {
-  background-image: url('/img/js.svg');
+  background-image: url('img/js.svg');
+  width: 40px;
+  height: 40px;
 }
 
 #css::after {
-  background-image: url('/img/css.svg');
+  background-image: url('img/css.svg');
+  width: 42px;
+  height: 42px;
 }
 
 #html::after {
-  background-image: url('/img/html.svg');
+  background-image: url('img/html.svg');
   width: 220px;
-  height: 90px;
+  height: 80px;
   
 }
 
